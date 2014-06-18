@@ -7,7 +7,7 @@ The following files are included:
 * README.md : this file
 * run_analysis.R : this file contains code required to create the tidy data set
 * finalData.txt : this file contains the final tidy data set
-* `.md : this file describes the variables in the tidy data
+* CodeBook.md : this file describes the variables in the tidy data
 * features.txt : contains the name of the features in the original untidy data, used by run_analysis.R function
 * activity_labels.txt : contains the label for each activity, used by run_analysis.R function
 * two folders "test" and "train" , each contains original untidy data, used by run_analysis.R function
@@ -20,4 +20,4 @@ To open the tidy data, run the following command on R:
 tidyData = read.table("finalData.txt",header= T)
 ```
 
-The tidyData will be a data frame with dimension of 180x68.
+If you download the file, please place it in the "UCI HAR Dataset" folder, so that is can find "test" and "train" subfolders. The tidyData will be a data frame with dimension of 180x68.
