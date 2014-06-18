@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Codebook for tidy data set</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>Codebook for tidy data set</h1>
+
+<p>The data set contains 68 variables. Except for Subject and Activity, all other variables are numeric. The prefix &#39;t&#39; indicates time domain variable, whereas &#39;f&#39; indicates frequency domain variable. The postfix &#39;X&#39;,&#39;Y&#39; and &#39;Z&#39; respectively provide measurement along X, Y and Z axis. Variable with &#39;mean&#39; indicates mean values, where as variable with &#39;std&#39; indicates standard deviation.</p>
+
+<ul>
+<li>Subject : Subject Number, 1 to 30<br/></li>
+<li>Activity : type of activity - LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS<br/></li>
+<li>tBodyAcc.mean.X<br/></li>
+<li>tBodyAcc.mean.Y<br/></li>
+<li>tBodyAcc.mean.Z<br/></li>
+<li>tBodyAcc.std.X<br/></li>
+<li>tBodyAcc.std.Y<br/></li>
+<li>tBodyAcc.std.Z<br/></li>
+<li>tGravityAcc.mean.X<br/></li>
+<li>tGravityAcc.mean.Y<br/></li>
+<li>tGravityAcc.mean.Z<br/></li>
+<li>tGravityAcc.std.X<br/></li>
+<li>tGravityAcc.std.Y<br/></li>
+<li>tGravityAcc.std.Z<br/></li>
+<li>tBodyAccJerk.mean.X<br/></li>
+<li>tBodyAccJerk.mean.Y<br/></li>
+<li>tBodyAccJerk.mean.Z<br/></li>
+<li>tBodyAccJerk.std.X<br/></li>
+<li>tBodyAccJerk.std.Y<br/></li>
+<li>tBodyAccJerk.std.Z<br/></li>
+<li>tBodyGyro.mean.X<br/></li>
+<li>tBodyGyro.mean.Y<br/></li>
+<li>tBodyGyro.mean.Z<br/></li>
+<li>tBodyGyro.std.X<br/></li>
+<li>tBodyGyro.std.Y<br/></li>
+<li>tBodyGyro.std.Z<br/></li>
+<li>tBodyGyroJerk.mean.X<br/></li>
+<li>tBodyGyroJerk.mean.Y<br/></li>
+<li>tBodyGyroJerk.mean.Z<br/></li>
+<li>tBodyGyroJerk.std.X<br/></li>
+<li>tBodyGyroJerk.std.Y<br/></li>
+<li>tBodyGyroJerk.std.Z<br/></li>
+<li>tBodyAccMag.mean<br/></li>
+<li>tBodyAccMag.std<br/></li>
+<li>tGravityAccMag.mean<br/></li>
+<li>tGravityAccMag.std<br/></li>
+<li>tBodyAccJerkMag.mean<br/></li>
+<li>tBodyAccJerkMag.std<br/></li>
+<li>tBodyGyroMag.mean<br/></li>
+<li>tBodyGyroMag.std<br/></li>
+<li>tBodyGyroJerkMag.mean<br/></li>
+<li>tBodyGyroJerkMag.std<br/></li>
+<li>fBodyAcc.mean.X<br/></li>
+<li>fBodyAcc.mean.Y<br/></li>
+<li>fBodyAcc.mean.Z<br/></li>
+<li>fBodyAcc.std.X<br/></li>
+<li>fBodyAcc.std.Y<br/></li>
+<li>fBodyAcc.std.Z<br/></li>
+<li>fBodyAccJerk.mean.X<br/></li>
+<li>fBodyAccJerk.mean.Y<br/></li>
+<li>fBodyAccJerk.mean.Z<br/></li>
+<li>fBodyAccJerk.std.X<br/></li>
+<li>fBodyAccJerk.std.Y<br/></li>
+<li>fBodyAccJerk.std.Z<br/></li>
+<li>fBodyGyro.mean.X<br/></li>
+<li>fBodyGyro.mean.Y<br/></li>
+<li>fBodyGyro.mean.Z<br/></li>
+<li>fBodyGyro.std.X<br/></li>
+<li>fBodyGyro.std.Y<br/></li>
+<li>fBodyGyro.std.Z<br/></li>
+<li>fBodyAccMag.mean<br/></li>
+<li>fBodyAccMag.std<br/></li>
+<li>fBodyBodyAccJerkMag.mean </li>
+<li>fBodyBodyAccJerkMag.std<br/></li>
+<li>fBodyBodyGyroMag.mean<br/></li>
+<li>fBodyBodyGyroMag.std<br/></li>
+<li>fBodyBodyGyroJerkMag.mean</li>
+<li>fBodyBodyGyroJerkMag.std </li>
+</ul>
+
+</body>
+
+</html>
+
